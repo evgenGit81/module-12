@@ -17,8 +17,8 @@ class RannerTest(unittest.TestCase):
         self.assertEqual(ds2.distance, 100)
         
     def test_chellenge(self):
-        self.frst_r - runner.Runner(name="Iiigor")
-        self.sec_r - runner.Runner(name="Oleg")
+        self.frst_r = runner.Runner(name="Iiigor")
+        self.sec_r = runner.Runner(name="Oleg")
         for i in range(10):
             self.frst_r.run()
             self.sec_r.walk()
