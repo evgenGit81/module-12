@@ -24,12 +24,7 @@ class TournamentTest(unittest.TestCase):
     def tearDownClass(cls):
         print("Результаты забега: ", cls.all_results)
         del cls.all_results
-        # for n, run in cls.all_results.items():
-        #     # print(n, run)
-        #     print('забег N', n)
-        #     print(cls.all_results.items())
-        #     for key, value in run.items():
-        #         print(key, value, run.items())
+        
 
     def test_start1(self):
         d = iat.Tournament(90, self.run_1, self.run_3)
