@@ -1,0 +1,16 @@
+2024-08-05 16:44:40,123 | WARNING | Неверный тип данных для Runner
+Traceback (most recent call last):
+  File "/home/hunter2/pythonProject/pythonProject/LearnUrban/Module_12/less_2_module_12/test_12_4.py", line 34, in test_run
+    ds2 = runner.Runner(2, 10)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hunter2/pythonProject/pythonProject/LearnUrban/Module_12/less_2_module_12/rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя не может быть только числом, передано {type(name).__name__}')
+TypeError: Имя не может быть только числом, передано int
+2024-08-05 16:44:40,129 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "/home/hunter2/pythonProject/pythonProject/LearnUrban/Module_12/less_2_module_12/test_12_4.py", line 19, in test_walk
+    ds1 = runner.Runner("Ivan", -100)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hunter2/pythonProject/pythonProject/LearnUrban/Module_12/less_2_module_12/rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -100
